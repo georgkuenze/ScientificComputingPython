@@ -1,0 +1,27 @@
+digraph G {
+"fig2" -> "ground";
+"ground" -> "wall";
+"fig2" -> "vehicle";
+"vehicle" -> "body";
+"body" -> "over";
+"over" -> "rectangle (1)";
+"body" -> "under";
+"under" -> "rectangle (2)";
+"vehicle" -> "wheels";
+"wheels" -> "wheel1";
+"wheel1" -> "wheel (1)";
+"wheel (1)" -> "arc (1)";
+"wheel1" -> "cross (1)";
+"cross (1)" -> "cross2 (1)";
+"cross2 (1)" -> "line (1)";
+"cross (1)" -> "cross1 (1)";
+"cross1 (1)" -> "line (2)";
+"wheels" -> "wheel2";
+"wheel2" -> "wheel (2)";
+"wheel (2)" -> "arc (2)";
+"wheel2" -> "cross (2)";
+"cross (2)" -> "cross2 (2)";
+"cross2 (2)" -> "line (3)";
+"cross (2)" -> "cross1 (2)";
+"cross1 (2)" -> "line (4)";
+}
